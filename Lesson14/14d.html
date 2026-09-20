@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 14d</title>
+    <style>
+        body
+		{
+            height: 3000px;
+            margin: 0;
+        }
+
+        .side 
+		{
+            position: fixed;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 200px;
+            background-color: green;
+            color: white;
+        }
+
+        .overlay
+		{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal
+		{
+            width: 650px;
+            background-color: white;
+
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .title
+		{
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .txt
+		{
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="side">right sidebar</div>
+
+    <div class="overlay">
+        <div class="modal">
+            <div class="title"> Modal Title</div>
+            <div class="txt">This is a modal</div>
+            <button>Close</button>
+        </div>
+    </div>
+</body>
+</html>
